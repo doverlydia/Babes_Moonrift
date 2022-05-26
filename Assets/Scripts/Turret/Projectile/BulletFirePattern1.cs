@@ -49,7 +49,7 @@ public class BulletFirePattern1 : MonoBehaviour
             bul.transform.position = transform.position;
             bul.transform.rotation = transform.rotation;
             bul.SetActive(true);
-            bul.GetComponent<BulletMovement>().MovementDirection(bulDir);
+            bul.GetComponent<BulletMovement>();//.movementdirection
 
             
             angle += angleStep;

@@ -27,7 +27,7 @@ public class BulletFirePattern3 : MonoBehaviour
             bul.transform.position = transform.position;
             bul.transform.rotation = transform.rotation;
             bul.SetActive(true);
-            bul.GetComponent<BulletMovement>().MovementDirection(bulDir);
+            bul.GetComponent<BulletMovement>(); //movement direction
 
 
             angle += 10f;
