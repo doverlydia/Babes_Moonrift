@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
-    [SerializeField] private Camera cam;
+    //Having issues assigning main camera when turret is made into a prefab - Mark
+    //[SerializeField] private Camera cam;
+    private Camera cam;
     [SerializeField] private BulletMovement bulletPrefab;
     [SerializeField] private Transform spawnPoint;
 
@@ -15,6 +17,13 @@ public class Turret : MonoBehaviour
     [SerializeField] private float rechargeSpeed;
 
     [SerializeField] private float bulletsPS;
+
+    //Setting camera to main here as opposed to in the inspector to mitigate information not
+    //carrying over into the prefab - Mark
+    void Awake()
+    {
+        cam = Camera.main;
+    }
 
     void Update()
     {

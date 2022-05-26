@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
 
     public void Die()
     {
-        Instantiate(destroyEnemy, transform.position, Quaternion.Euler(90, 0, 0));
+        //Instantiate(destroyEnemy, transform.position, Quaternion.Euler(90, 0, 0));
         Destroy(gameObject);
     }
 
