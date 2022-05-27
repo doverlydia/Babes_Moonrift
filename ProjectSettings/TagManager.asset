@@ -49,6 +49,9 @@ TagManager:
   - name: Barrel
     uniqueID: 3738762051
     locked: 0
+  - name: Player
+    uniqueID: 1886633577
+    locked: 0
   - name: Bullet
     uniqueID: 3496220659
     locked: 0
