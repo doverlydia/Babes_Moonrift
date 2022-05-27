@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
 
     [SerializeField] float interval = 5f;
-    [SerializeField] EnemyPlaceholder enemy;
+    [SerializeField] GameObject enemy;
     [SerializeField] Transform spawnPoint;
     float time;
     int counter = 0;
@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
 
         while (time >= interval && counter <= 10)
         {
-            Instantiate(enemy, spawnPoint);
+            Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
             time -= interval;
             counter++;
         }
