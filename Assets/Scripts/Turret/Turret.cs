@@ -23,6 +23,7 @@ public class Turret : MonoBehaviour
     void Awake()
     {
         cam = Camera.main;
+        GetComponent<Turret>().enabled = false;
     }
 
     void Update()
