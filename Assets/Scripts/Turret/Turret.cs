@@ -31,7 +31,7 @@ public class Turret : MonoBehaviour
         mousePos.z = 0;
         transform.up = Vector3.MoveTowards(transform.up, mousePos, rotationSpeed * Time.deltaTime);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity).Init(transform.up);
         }

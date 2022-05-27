@@ -6,13 +6,9 @@ public class SwitchTheTurret : MonoBehaviour
 {
     public GameControll control;
 
-    void TurretSwitch()
+    void OnMouseDown()
     {
-        if(Input.GetMouseButtonDown(1))
-        {
-            control.ChangeTurret(this.gameObject);
-            GetComponent<Turret>().enabled = true;
-        }
-        
+        control.ChangeTurret(this.gameObject);
+        GetComponent<Turret>().enabled = true;
     }
 }

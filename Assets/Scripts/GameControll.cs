@@ -8,10 +8,7 @@ public class GameControll : MonoBehaviour
     [SerializeField]
 
     GameObject currentTurret;
-    
-
-    
-    
+               
     void Start()
     {
        for (int i = 1; i < turrets.Length; i++)

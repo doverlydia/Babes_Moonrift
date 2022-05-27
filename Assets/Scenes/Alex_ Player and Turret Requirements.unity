@@ -386,7 +386,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &143359108
 MonoBehaviour:
@@ -603,8 +603,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turrets:
-  - {fileID: 170617738}
-  - {fileID: 1903704119}
+  - {fileID: 1562697475}
+  - {fileID: 1544509752}
   currentTurret: {fileID: 0}
 --- !u!4 &444389660
 Transform:
@@ -772,7 +772,7 @@ Transform:
   - {fileID: 699849677}
   - {fileID: 716535248}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &699849676
 GameObject:
@@ -1510,7 +1510,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1903704119
 GameObject:
