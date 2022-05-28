@@ -2,12 +2,9 @@
 
 public class Move : MonoBehaviour
 {
-    void Update()
+    [SerializeField] Transform target;
+    void Start()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Vector3 w = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            GetComponent<NavMeshAgent2D>().destination = w;
-        }
+        GetComponent<NavMeshAgent2D>().destination = target.position;
     }
 }
