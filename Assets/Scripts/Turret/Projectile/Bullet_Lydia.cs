@@ -59,7 +59,7 @@ public class Bullet_Lydia : MonoBehaviour
     private void BulletBehaviourOnHit(Collider2D collision)
     {
         //print(name + " Collides with" + collision.gameObject.name);
-        if (layersIHit.Contains(collision.gameObject.layer))
+        if (collision.gameObject.tag == "Enemy")
         {
             if (collision.gameObject.GetComponent<Damagable_Lydia>())
                 applyDamage.ApplyDamageToDamagable(collision.gameObject.GetComponent<Damagable_Lydia>());

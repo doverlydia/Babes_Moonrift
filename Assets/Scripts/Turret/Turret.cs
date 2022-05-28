@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
+    public AudioSource audioSource;
+
+
     //Having issues assigning main camera when turret is made into a prefab - Mark
     //[SerializeField] private Camera cam;
     private Camera cam;
@@ -35,6 +38,7 @@ public class Turret : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(bulletPrefab, spawnPoint.position, Quaternion.identity).Init(transform.up);
+            audioSource.Play();
         }
     }
 
