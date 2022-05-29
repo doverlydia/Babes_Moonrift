@@ -11,16 +11,25 @@ public class GameControll : MonoBehaviour
     void Awake()
     {
         turrets = FindObjectsOfType<Turret_Lydia>();
-        currentTurret = turrets[1];
-        ChangeTurret(turrets[0]);
+        //currentTurret = turrets[1];
+        //ChangeTurret(turrets[0]);
+        foreach(Turret_Lydia turret in turrets)
+        {
+            turret.isActive = false;
+            turret.lookAt.enabled = false;
+        }
     }
    public void ChangeTurret(Turret_Lydia turret)
     {
         turret.isActive = true;
         turret.lookAt.enabled = true;
         
-        currentTurret.isActive = false;
-        currentTurret.lookAt.enabled = false;
+        if (currentTurret != null)
+        {
+            currentTurret.isActive = false;
+            currentTurret.lookAt.enabled = false;
+        }
+      
         
         currentTurret = turret;
 

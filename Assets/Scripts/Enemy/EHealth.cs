@@ -13,6 +13,7 @@ public class EHealth : MonoBehaviour
 {
     public float health;
     public float maxHealth;
+    public Damagable_Lydia damageable;
 
     public GameObject healthBarUI;
     public Slider slider;
@@ -20,13 +21,20 @@ public class EHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = maxHealth;
+        damageable = GetComponent<Damagable_Lydia>();
+        health = damageable.GetCurrentHP();
+        maxHealth = damageable.GetMaxHP();
         slider.value = CalculateHealth();
+
+        //health = maxHealth;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        health = damageable.GetCurrentHP();
+        maxHealth = damageable.GetMaxHP();
         slider.value = CalculateHealth();
 
         if(health < maxHealth)

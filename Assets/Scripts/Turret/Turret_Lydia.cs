@@ -10,8 +10,16 @@ public class Turret_Lydia : MonoBehaviour
     public GameControll controll { get; private set; }
     public LookAt2D_Lydia lookAt { get; private set; }
     private float lastShot;
-
-    public bool isActive = false;
+    private bool firstClick = false;
+    private bool _isActive;
+    public bool isActive {
+        get { return _isActive; } set {
+            _isActive = value;
+            if (value == true)
+            {
+                firstClick = true; 
+            }               
+        } }
 
     internal Vector2 shootVector => (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
 
@@ -29,11 +37,14 @@ public class Turret_Lydia : MonoBehaviour
 
     private void Update()
     {
-        if (isActive && Input.GetMouseButton(0))
+        if (isActive && firstClick == false && Input.GetMouseButton(0))
         {
             Pew();
         }
-
+        else if (isActive && firstClick == true)
+        {
+            firstClick = false;
+        }
 
     }
 
