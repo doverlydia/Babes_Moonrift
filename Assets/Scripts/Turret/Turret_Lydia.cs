@@ -36,10 +36,17 @@ public class Turret_Lydia : MonoBehaviour
         {
             case ShootMode.mouse:
                 return (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-            case ShootMode.enemy:
+            case ShootMode.enemy:         
                 GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-                Transform enemy = enemies[Random.Range(0, enemies.Length - 1)].transform;
-                return (enemy.position - transform.position).normalized;
+                if (enemies.Length > 0)
+                {
+                    Transform enemy = enemies[Random.Range(0, enemies.Length - 1)].transform;
+                    return (enemy.position - transform.position).normalized;
+                }
+                else
+                {
+                    return Vector2.up;
+                }
             default:
                 return Vector2.up;
         }
