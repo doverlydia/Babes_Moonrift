@@ -8,7 +8,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
-        GameEvents.EnemyDeath.AddListener(() => AddMoney(1));
+        GameEvents.instance.EnemyDeath.AddListener(() => AddMoney(1));
     }
 
     public void AddMoney(int amount)
