@@ -6,6 +6,7 @@ public class EnemyDeath : MonoBehaviour
 {
     private void OnDestroy()
     {
-        GameEvents.instance.EnemyDeath.Invoke();
+        if (GetComponent<Damagable_Lydia>().Dead)
+            GameEvents.instance.EnemyDeath.Invoke();
     }
 }

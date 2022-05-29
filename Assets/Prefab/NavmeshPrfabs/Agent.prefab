@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1248041561}
   - component: {fileID: 1443281896724838460}
   - component: {fileID: 3325411919859359566}
-  - component: {fileID: 188220853456749684}
+  - component: {fileID: 844637712370243737}
   m_Layer: 8
   m_Name: Agent
   m_TagString: Enemy
@@ -181,7 +181,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &188220853456749684
+--- !u!114 &844637712370243737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

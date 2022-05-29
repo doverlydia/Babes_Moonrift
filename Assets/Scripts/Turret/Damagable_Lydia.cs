@@ -4,7 +4,7 @@ using UnityEngine;
 public class Damagable_Lydia : MonoBehaviour
 {
     [SerializeField] float maxHp;
-    internal bool Dead;
+    internal bool Dead => currentHp <= 0;
     private float currentHp;
 
     private void Start()

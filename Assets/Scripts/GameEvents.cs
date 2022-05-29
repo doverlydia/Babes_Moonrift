@@ -6,6 +6,7 @@ public class GameEvents : MonoBehaviour
 
     public UnityEvent EnemyDeath;
     public UnityEvent GameLost;
+    public UnityEvent EnemyArrivedToDestination;
 
     private void Awake()
     {
