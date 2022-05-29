@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ShootMode
+{
+    up,
+    enemy,
+    mouse
+}
 public class Turret_Lydia : MonoBehaviour
 {
     [SerializeField] private ObjectPool_Lydia pool;
@@ -10,6 +16,7 @@ public class Turret_Lydia : MonoBehaviour
     public GameControll controll { get; private set; }
     public LookAt2D_Lydia lookAt { get; private set; }
     private float lastShot;
+    [SerializeField] ShootMode mode;
     //private bool firstClick = false;
     //private bool _isActive;
     //public bool isActive {
@@ -21,7 +28,22 @@ public class Turret_Lydia : MonoBehaviour
     //        }               
     //    } }
 
-    internal Vector2 shootVector => lookAt.aimToMouse? (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized : Vector2.up;
+    internal Vector2 shootVector => GetShootVector();
+
+    Vector2 GetShootVector()
+    {
+        switch (mode)
+        {
+            case ShootMode.mouse:
+                return (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+            case ShootMode.enemy:
+                GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+                Transform enemy = enemies[Random.Range(0, enemies.Length - 1)].transform;
+                return (enemy.position - transform.position).normalized;
+            default:
+                return Vector2.up;
+        }
+    }
 
     private void Awake()
     {
@@ -39,7 +61,7 @@ public class Turret_Lydia : MonoBehaviour
     {
         //if (isActive && firstClick == false && Input.GetMouseButton(0))
         //{
-            Pew();
+        Pew();
         //}
         //else if (isActive && firstClick == true)
         //{
