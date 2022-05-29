@@ -35,7 +35,7 @@ public class TurretSpawningManager : MonoBehaviour
 
     private void Update()
     {
-        if (turretSpawner.gameObject.activeSelf && Input.GetMouseButtonDown(0))
+        if (turretSpawner.gameObject.activeInHierarchy && Input.GetMouseButtonDown(0))
         {
             TrySpawn(turretPrefab);
         }

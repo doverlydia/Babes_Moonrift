@@ -10,7 +10,7 @@ public class TurretSpawner : MonoBehaviour
     [SerializeField] List<Collider2D> results = new List<Collider2D>();
     ContactFilter2D contactFilter = new ContactFilter2D();
     [SerializeField] LayerMask layerMask;
-    private void Start()
+    private void Awake()
     {
         bounds = GetComponent<BoxCollider2D>();
         sr = GetComponent<SpriteRenderer>();

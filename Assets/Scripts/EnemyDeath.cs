@@ -6,6 +6,6 @@ public class EnemyDeath : MonoBehaviour
 {
     private void OnDestroy()
     {
-        GameEvents.EnemyDeath.Invoke();
+        GameEvents.instance.EnemyDeath.Invoke();
     }
 }
