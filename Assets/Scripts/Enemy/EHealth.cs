@@ -11,8 +11,8 @@ using UnityEngine.UI;
 
 public class EHealth : MonoBehaviour
 {
-    public float health;
-    public float maxHealth;
+    private float health;
+    private float maxHealth;
     public Damagable_Lydia damageable;
 
     public GameObject healthBarUI;
