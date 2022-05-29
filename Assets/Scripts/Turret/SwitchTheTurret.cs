@@ -1,35 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
-
-/*
- * Switching Turret Control Script
- * Original script made by Alex
- * 5/27/22
- */
+using UnityEngine.EventSystems;
 
 public class SwitchTheTurret : MonoBehaviour
 {
-    public GameControll control;
-
-
-    //Attempting to get it to work when pressing the 'E' key
-    //Currently works to enable the first turret but cannot be used to enable
-    /*
-    void Update()
+    Turret_Lydia myTurret;
+    private void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        myTurret = GetComponentInChildren<Turret_Lydia>();
+    }
+    public void OnMouseDown()
+    {
+        Debug.Log("hello!");
+        if (!myTurret.isActive)
         {
-            control.ChangeTurret(this.gameObject);
-            GetComponent<Turret>().enabled = true;
+            myTurret.controll.ChangeTurret(myTurret);
         }
-        
     }
-    */
-
-    void OnMouseDown()
-    {
-        control.ChangeTurret(this.gameObject);
-        GetComponent<Turret>().enabled = true;
-    }
-
 }

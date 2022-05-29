@@ -7,14 +7,19 @@ public class Turret_Lydia : MonoBehaviour
     [SerializeField] private ObjectPool_Lydia pool;
     [SerializeField] private float CoolDownRanged;
     [SerializeField] Transform firePointTransform;
-    
+    public GameControll controll { get; private set; }
+    public LookAt2D_Lydia lookAt { get; private set; }
     private float lastShot;
+
+    public bool isActive = false;
 
     internal Vector2 shootVector => (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
 
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Confined;
+        lookAt = GetComponent<LookAt2D_Lydia>();
+        controll = FindObjectOfType<GameControll>();
     }
 
     private void Start()
@@ -24,10 +29,12 @@ public class Turret_Lydia : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (isActive && Input.GetMouseButton(0))
         {
             Pew();
         }
+
+
     }
 
     void Pew()
@@ -49,4 +56,5 @@ public class Turret_Lydia : MonoBehaviour
             shot.direction = shootVector;
         }
     }
+
 }
