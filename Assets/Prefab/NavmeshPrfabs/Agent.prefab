@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1248041561}
   - component: {fileID: 1443281896724838460}
   - component: {fileID: 3325411919859359566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Agent
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 20
   maxHealth: 20
+  damageable: {fileID: 0}
   healthBarUI: {fileID: 2400241893299505753}
   slider: {fileID: 2400241893543615729}
 --- !u!61 &3325411919859359566
