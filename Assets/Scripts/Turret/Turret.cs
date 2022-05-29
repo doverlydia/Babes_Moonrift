@@ -13,7 +13,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private BulletMovement bulletPrefab;
     [SerializeField] private Transform spawnPoint;
 
-    [SerializeField] private float clampAngle = 90f;
+    //[SerializeField] private float clampAngle = 90f;
     [SerializeField] private float rotationSpeed = 5f;
 
     [SerializeField] private float totalCharge;

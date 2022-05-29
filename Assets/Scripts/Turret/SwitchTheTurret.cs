@@ -9,12 +9,12 @@ public class SwitchTheTurret : MonoBehaviour
     {
         myTurret = GetComponentInChildren<Turret_Lydia>();
     }
-    public void OnMouseDown()
-    {
-        Debug.Log("hello!");
-        if (!myTurret.isActive)
-        {
-            myTurret.controll.ChangeTurret(myTurret);
-        }
-    }
+    //public void OnMouseDown()
+    //{
+    //    Debug.Log("hello!");
+    //    if (!myTurret.isActive)
+    //    {
+    //        myTurret.controll.ChangeTurret(myTurret);
+    //    }
+    //}
 }

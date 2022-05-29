@@ -10,18 +10,18 @@ public class Turret_Lydia : MonoBehaviour
     public GameControll controll { get; private set; }
     public LookAt2D_Lydia lookAt { get; private set; }
     private float lastShot;
-    private bool firstClick = false;
-    private bool _isActive;
-    public bool isActive {
-        get { return _isActive; } set {
-            _isActive = value;
-            if (value == true)
-            {
-                firstClick = true; 
-            }               
-        } }
+    //private bool firstClick = false;
+    //private bool _isActive;
+    //public bool isActive {
+    //    get { return _isActive; } set {
+    //        _isActive = value;
+    //        if (value == true)
+    //        {
+    //            firstClick = true; 
+    //        }               
+    //    } }
 
-    internal Vector2 shootVector => (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+    internal Vector2 shootVector => lookAt.aimToMouse? (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized : Vector2.up;
 
     private void Awake()
     {
@@ -37,15 +37,14 @@ public class Turret_Lydia : MonoBehaviour
 
     private void Update()
     {
-        if (isActive && firstClick == false && Input.GetMouseButton(0))
-        {
+        //if (isActive && firstClick == false && Input.GetMouseButton(0))
+        //{
             Pew();
-        }
-        else if (isActive && firstClick == true)
-        {
-            firstClick = false;
-        }
-
+        //}
+        //else if (isActive && firstClick == true)
+        //{
+        //    firstClick = false;
+        //}
     }
 
     void Pew()
