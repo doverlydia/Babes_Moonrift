@@ -1,19 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public enum EntityType
-{
-    Enemy,
-    Player
-}
-
 public class Damagable_Lydia : MonoBehaviour
 {
     [SerializeField] float maxHp;
     internal bool Dead;
     private float currentHp;
-    [SerializeField] EntityType entityType = EntityType.Enemy;
 
     private void Start()
     {
@@ -27,11 +19,6 @@ public class Damagable_Lydia : MonoBehaviour
         //death
         if (currentHp <= 0)
         {
-            if (entityType == EntityType.Enemy)
-            {
-                GameEvents.EnemyDeath.Invoke();
-            }
-
             Destroy(gameObject);
         }
     }
