@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 501779351}
   - component: {fileID: 501779350}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: Quit Button (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 1801012703}
   - component: {fileID: 1801012702}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Start Button (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
