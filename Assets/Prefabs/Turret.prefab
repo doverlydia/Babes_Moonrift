@@ -56,9 +56,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1298678823453648261}
   - component: {fileID: 1298678823453648260}
+  - component: {fileID: 2830621028728122739}
   - component: {fileID: 1298678823453648262}
-  - component: {fileID: 1298678823453648259}
-  - component: {fileID: 4536070526746500315}
   m_Layer: 3
   m_Name: Turret Barrel
   m_TagString: Untagged
@@ -134,6 +133,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2830621028728122739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298678823453648266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbef03777b77bbf4491083f6176401c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Point: {fileID: 1298678823833053493}
+  ProjectilePreFab: {fileID: 8197142983047413595, guid: 2dda558effe19c545a4f337457db9437, type: 3}
 --- !u!50 &1298678823453648262
 Rigidbody2D:
   serializedVersion: 4
@@ -155,36 +168,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 3
---- !u!114 &1298678823453648259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298678823453648266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00450d68668b6fb45bb84373adf17e0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pool: {fileID: 1298678823198118558}
-  CoolDownRanged: 1
-  firePointTransform: {fileID: 1298678823833053493}
---- !u!114 &4536070526746500315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298678823453648266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dff7b4128c371345be60b543e41c06d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  axis: 1
-  inverted: 0
 --- !u!1 &1298678823493531772
 GameObject:
   m_ObjectHideFlags: 0
