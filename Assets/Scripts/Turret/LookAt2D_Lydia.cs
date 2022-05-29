@@ -14,7 +14,8 @@ public class LookAt2D_Lydia : MonoBehaviour
     {
         if (cam == null)
         {
-            Debug.LogError(gameObject.name + " target missing!");
+            //Debug.LogError(gameObject.name + " target missing!");
+            cam = Camera.main;
             return;
         }
         // store mouse pixel coordinates
