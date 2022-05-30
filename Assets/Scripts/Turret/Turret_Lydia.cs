@@ -15,7 +15,7 @@ public class Turret_Lydia : MonoBehaviour
     [SerializeField] Transform firePointTransform;
     public GameControll controll { get; private set; }
     public LookAt2D_Lydia lookAt { get; private set; }
-    private float lastShot;
+    private float lastShot = 1;
     //public Transform enemy;
     [SerializeField] ShootMode mode;
     //private bool firstClick = false;
