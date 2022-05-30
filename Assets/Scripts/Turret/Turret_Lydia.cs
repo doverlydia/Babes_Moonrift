@@ -16,6 +16,7 @@ public class Turret_Lydia : MonoBehaviour
     public GameControll controll { get; private set; }
     public LookAt2D_Lydia lookAt { get; private set; }
     private float lastShot;
+    //public Transform enemy;
     [SerializeField] ShootMode mode;
     //private bool firstClick = false;
     //private bool _isActive;
@@ -54,7 +55,7 @@ public class Turret_Lydia : MonoBehaviour
 
     private void Awake()
     {
-        Cursor.lockState = CursorLockMode.Confined;
+        //Cursor.lockState = CursorLockMode.Confined;
         lookAt = GetComponent<LookAt2D_Lydia>();
         controll = FindObjectOfType<GameControll>();
     }

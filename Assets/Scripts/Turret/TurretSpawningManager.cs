@@ -10,11 +10,13 @@ public class TurretSpawningManager : MonoBehaviour
     [SerializeField] TurretSpawner turretSpawner;
     private bool CanAffordTurret(int price)
     {
+        //Check price here
         return playerStats.Money >= price;
     }
 
     private void SpawnTurretAtPos(GameObject turret, Vector3 pos)
     {
+        //Subtract price here
         Instantiate(turret, pos, Quaternion.identity);
     }
 

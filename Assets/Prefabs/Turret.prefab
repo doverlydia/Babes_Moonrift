@@ -149,7 +149,7 @@ MonoBehaviour:
   pool: {fileID: 1298678823198118558}
   CoolDownRanged: 1
   firePointTransform: {fileID: 1298678823833053493}
-  mode: 1
+  mode: 2
 --- !u!114 &96579008144472545
 MonoBehaviour:
   m_ObjectHideFlags: 0
