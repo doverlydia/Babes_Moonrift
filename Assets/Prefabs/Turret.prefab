@@ -165,7 +165,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   axis: 1
   inverted: 0
-  <aimToMouse>k__BackingField: 0
+  <aimToMouse>k__BackingField: 1
 --- !u!50 &1298678823453648262
 Rigidbody2D:
   serializedVersion: 4
