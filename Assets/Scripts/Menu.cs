@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -16,10 +17,9 @@ public class Menu : MonoBehaviour
         
     }
 
-    public void NewGame()
+    public void LoadScene(int index)
     {
-        //Add the name of the scene to be used.
-        //SceneManager.LoadScene("scene-name");
+        SceneManager.LoadScene(index);
     }
 
     public void QuitToDesktop()

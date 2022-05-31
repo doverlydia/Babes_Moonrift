@@ -1,29 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class GameControll : MonoBehaviour
 {
-    public GameObject[] turrets;
-    [SerializeField]
+    public Turret_Lydia[] turrets;
+    //Turret_Lydia currentTurret = null;
 
-    GameObject currentTurret;
-               
-    void Start()
+    void Awake()
     {
-       for (int i = 1; i < turrets.Length; i++)
-        {
-            turrets[i].GetComponent<Turret>().enabled = false;  
-        }
-        currentTurret = turrets[0];
+        turrets = FindObjectsOfType<Turret_Lydia>();
+        //currentTurret = turrets[1];
+        //ChangeTurret(turrets[0]);
+        //foreach(Turret_Lydia turret in turrets)
+        //{
+        //    turret.isActive = false;
+        //    turret.lookAt.enabled = false;
+        //}
+    }
+   //public void ChangeTurret(Turret_Lydia turret)
+   // {
+   //     turret.isActive = true;
+   //     turret.lookAt.enabled = true;
         
-    }
+   //     if (currentTurret != null)
+   //     {
+   //         currentTurret.isActive = false;
+   //         currentTurret.lookAt.enabled = false;
+   //     }
+      
+        
+   //     currentTurret = turret;
 
-    public void ChangeTurret(GameObject turret)
-    {
-        currentTurret.GetComponent<Turret>().enabled = false;
-        currentTurret = turret;
-    }
-  
-   
+   //     Debug.Log("turret changed!");
+   // }
 }

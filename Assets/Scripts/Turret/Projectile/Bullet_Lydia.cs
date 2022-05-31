@@ -19,6 +19,7 @@ public class Bullet_Lydia : MonoBehaviour
 
     private void Awake()
     {
+
         rb = GetComponent<Rigidbody2D>();
         applyDamage = GetComponent<ApplyDamage_Lydia>();
     }
@@ -26,6 +27,10 @@ public class Bullet_Lydia : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 tmp = direction.normalized;
+
+        if (tmp == Vector3.zero)
+            tmp = Vector2.up;
+
         rb.velocity = tmp * speed;
     }
 

@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 1163117277
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -54,4 +57,7 @@ TagManager:
     locked: 0
   - name: Bullet
     uniqueID: 3496220659
+    locked: 0
+  - name: UI
+    uniqueID: 3599075809
     locked: 0
