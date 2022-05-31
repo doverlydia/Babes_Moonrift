@@ -1,41 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class GameControll : MonoBehaviour
 {
-    [SerializeField] GameObject player, turret;
-    [SerializeField] Transform posses;
+    public Turret_Lydia[] turrets;
+    //Turret_Lydia currentTurret = null;
 
-    Rigidbody2D playerRb, turretRb;
-
-    bool isPossesed;
-    public static bool playerPossesTheTurret;
-
-    
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        playerRb = GetComponent<Rigidbody2D>();
-        turretRb = GetComponent<Rigidbody2D>();
+        turrets = FindObjectsOfType<Turret_Lydia>();
+        //currentTurret = turrets[1];
+        //ChangeTurret(turrets[0]);
+        //foreach(Turret_Lydia turret in turrets)
+        //{
+        //    turret.isActive = false;
+        //    turret.lookAt.enabled = false;
+        //}
+    }
+   //public void ChangeTurret(Turret_Lydia turret)
+   // {
+   //     turret.isActive = true;
+   //     turret.lookAt.enabled = true;
         
-    }
+   //     if (currentTurret != null)
+   //     {
+   //         currentTurret.isActive = false;
+   //         currentTurret.lookAt.enabled = false;
+   //     }
+      
+        
+   //     currentTurret = turret;
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    public void PossesTheTurret()
-    {
-        if (!isPossesed)
-        {
-            player.gameObject.SetActive(false);
-        }
-        if (isPossesed )
-        {
-            player.gameObject.SetActive(true);
-            player.transform.position = new Vector2(posses.position.x, posses.position.y);
-        }
-    }
+   //     Debug.Log("turret changed!");
+   // }
 }

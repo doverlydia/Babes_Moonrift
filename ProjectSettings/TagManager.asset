@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Turret
   - Water
   - UI
-  - Bullet
+  - Bullets
   - Player
   - Enemy
   - 
@@ -39,6 +40,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 1163117277
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Base
+    uniqueID: 840217087
+    locked: 0
+  - name: Barrel
+    uniqueID: 3738762051
+    locked: 0
+  - name: Player
+    uniqueID: 1886633577
+    locked: 0
+  - name: Bullet
+    uniqueID: 3496220659
+    locked: 0
+  - name: UI
+    uniqueID: 3599075809
     locked: 0
