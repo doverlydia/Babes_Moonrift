@@ -2666,6 +2666,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 255213977676535378, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 255213977676535378, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 331663902, guid: 0d5fe691157f9d54ba6f9a516c8a53fc, type: 3}
+    - target: {fileID: 255213977676535378, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 255213977676535379, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
       propertyPath: m_Name
       value: Target
@@ -2680,7 +2692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 255213977676535381, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05
+      value: 1.24
       objectReference: {fileID: 0}
     - target: {fileID: 255213977676535381, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
       propertyPath: m_LocalPosition.z
