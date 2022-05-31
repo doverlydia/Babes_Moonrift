@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: d85a70dcf710bb74c9bff1c26328d62f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 53dff6d2c6782af4b9427f205aefab18, type: 2}
 --- !u!114 &28938697 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8719046174700110790, guid: ea9a153a2318c3c46afff29a633be072, type: 3}
@@ -2676,11 +2676,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 255213977676535381, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.47
+      value: 7.52
       objectReference: {fileID: 0}
     - target: {fileID: 255213977676535381, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 255213977676535381, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3037,32 +3037,64 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 713989531010145402, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.0949
+      objectReference: {fileID: 0}
+    - target: {fileID: 713989531010145402, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.54
+      value: 4.9925
+      objectReference: {fileID: 0}
+    - target: {fileID: 713989531010145403, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
+      propertyPath: m_Name
+      value: Up
       objectReference: {fileID: 0}
     - target: {fileID: 713989531010145403, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 713989531590125044, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
+      propertyPath: m_Name
+      value: Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 713989531590125044, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 713989531590125051, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0995
+      objectReference: {fileID: 0}
+    - target: {fileID: 713989531590125051, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.36
+      value: 9.3102
+      objectReference: {fileID: 0}
+    - target: {fileID: 713989532742405324, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
+      propertyPath: m_Name
+      value: Left
       objectReference: {fileID: 0}
     - target: {fileID: 713989532742405324, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 713989532742405331, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0498
+      objectReference: {fileID: 0}
+    - target: {fileID: 713989532742405331, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.24
+      value: -9.2151
+      objectReference: {fileID: 0}
+    - target: {fileID: 713989532792840910, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8958
       objectReference: {fileID: 0}
     - target: {fileID: 713989532792840910, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.42
+      value: -4.9721
+      objectReference: {fileID: 0}
+    - target: {fileID: 713989532792840911, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
+      propertyPath: m_Name
+      value: Bottom
       objectReference: {fileID: 0}
     - target: {fileID: 713989532792840911, guid: 8cb016ce5710fb7498f2454bab320098, type: 3}
       propertyPath: m_StaticEditorFlags

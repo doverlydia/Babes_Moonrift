@@ -10,25 +10,14 @@ public enum ShootMode
 }
 public class Turret_Lydia : MonoBehaviour
 {
+    private float lastShot = 1;
+
     [SerializeField] private ObjectPool_Lydia pool;
     [SerializeField] private float CoolDownRanged;
     [SerializeField] Transform firePointTransform;
+    [SerializeField] ShootMode mode;
     public GameControll controll { get; private set; }
     public LookAt2D_Lydia lookAt { get; private set; }
-    private float lastShot = 1;
-    //public Transform enemy;
-    [SerializeField] ShootMode mode;
-    //private bool firstClick = false;
-    //private bool _isActive;
-    //public bool isActive {
-    //    get { return _isActive; } set {
-    //        _isActive = value;
-    //        if (value == true)
-    //        {
-    //            firstClick = true; 
-    //        }               
-    //    } }
-
     internal Vector2 shootVector => GetShootVector();
 
     Vector2 GetShootVector()
@@ -67,14 +56,7 @@ public class Turret_Lydia : MonoBehaviour
 
     private void Update()
     {
-        //if (isActive && firstClick == false && Input.GetMouseButton(0))
-        //{
         Pew();
-        //}
-        //else if (isActive && firstClick == true)
-        //{
-        //    firstClick = false;
-        //}
     }
 
     void Pew()
@@ -91,7 +73,6 @@ public class Turret_Lydia : MonoBehaviour
         {
             bullet.transform.position = firePointTransform.position;
             Bullet_Lydia shot = bullet.GetComponent<Bullet_Lydia>();
-            bullet.transform.parent = null;
             bullet.SetActive(true);
             shot.direction = shootVector;
         }

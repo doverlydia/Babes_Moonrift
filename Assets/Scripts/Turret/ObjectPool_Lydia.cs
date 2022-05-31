@@ -25,6 +25,6 @@ public class ObjectPool_Lydia : MonoBehaviour
     }
     public GameObject GetPooledObjects()
     {
-        return pooledObjects.Where(x => !x.activeInHierarchy).First<GameObject>();
+        return pooledObjects.Where(x => !x.activeSelf).First<GameObject>();
     }
 }
