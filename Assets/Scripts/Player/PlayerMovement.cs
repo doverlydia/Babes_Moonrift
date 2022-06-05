@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float xMove = Input.GetAxis("Horizontal");
         float yMove = Input.GetAxis("Vertical");
-        
-        rb.velocity = new Vector2(xMove * speed, yMove * speed);
+
+        rb.velocity = new Vector2(xMove * speed * Time.deltaTime, yMove * speed * Time.deltaTime);
     }
 }

@@ -15,7 +15,7 @@ public class Turret_Lydia : MonoBehaviour
     [SerializeField] private ObjectPool_Lydia pool;
     [SerializeField] private float CoolDownRanged;
     [SerializeField] Transform firePointTransform;
-    [SerializeField] ShootMode mode;
+    [SerializeField] public ShootMode mode;
     public GameControll controll { get; private set; }
     public LookAt2D_Lydia lookAt { get; private set; }
     internal Vector2 shootVector => GetShootVector();
