@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1443281896724838460}
   - component: {fileID: 3325411919859359566}
   - component: {fileID: 844637712370243737}
+  - component: {fileID: 7957343327674752712}
   m_Layer: 8
   m_Name: Agent
   m_TagString: Enemy
@@ -150,8 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 173dfc6b732f9fb40917a0b5c22b4e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
-  maxHealth: 20
   damageable: {fileID: 0}
   healthBarUI: {fileID: 2400241893299505753}
   slider: {fileID: 2400241893543615729}
@@ -193,6 +192,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aca1295eaebde544990e9655862e877d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7957343327674752712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358927509719462577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8df2fb395a66b343a583c53bceb4685, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1001 &2373554140784219010
 PrefabInstance:
   m_ObjectHideFlags: 0

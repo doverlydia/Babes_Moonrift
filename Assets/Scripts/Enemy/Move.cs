@@ -16,7 +16,9 @@ public class Move : MonoBehaviour
         if(Vector2.Distance(transform.position, target.position) <= 1)
         {
             GameEvents.instance.EnemyArrivedToDestination.Invoke();
+            GetComponent<ApplyDamage_Lydia>().ApplyDamageToDamagable(target.gameObject.GetComponent<Damagable_Lydia>());
             Destroy(gameObject);
+
         }
     }
 }
