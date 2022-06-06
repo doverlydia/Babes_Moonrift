@@ -4,10 +4,11 @@ using System.Collections.Generic;
 
 public class Move : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    Transform target;
     
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Target").transform;
         GetComponent<NavMeshAgent2D>().destination = target.position;
     }
 
