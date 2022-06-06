@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 031a2185e48bdd84ba593dd6f6669a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corpsePrefab: {fileID: 7967540393224340208, guid: 55995641c1357d4478b64a1470188fef, type: 3}
 --- !u!114 &788560815178862276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +225,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 2
+  onHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1248041561
 MonoBehaviour:
   m_ObjectHideFlags: 0

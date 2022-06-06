@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class AgentEnemy : MonoBehaviour
 {
     Transform target;
+    [SerializeField] GameObject corpsePrefab;
 
     
     void Start()
@@ -34,6 +35,6 @@ public class AgentEnemy : MonoBehaviour
     }
     void OnDeath()
     {
-        GetComponent<Animator>().SetBool("die",true);
+        Instantiate(corpsePrefab, transform.position, Quaternion.identity);
     }
 }
