@@ -129,6 +129,7 @@ MonoBehaviour:
   LifeTime: 3
   speed: 10
   layersIHit: 
+  explosionPrefab: {fileID: 4785145961057405494, guid: 3480959fc6859f4469498be86dff6935, type: 3}
 --- !u!114 &7428876883021869656
 MonoBehaviour:
   m_ObjectHideFlags: 0

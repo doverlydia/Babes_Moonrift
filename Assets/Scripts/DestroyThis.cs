@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PinkAgentCorpse : MonoBehaviour
+public class DestroyThis : MonoBehaviour
 {
-    public void DestroyCorpse()
+    public void DestroyThisThing()
     {
         Destroy(gameObject);
     }

@@ -11,6 +11,7 @@ public class Bullet_Lydia : MonoBehaviour
     [SerializeField] List<int> layersIHit;
     ApplyDamage_Lydia applyDamage;
     private float lifetimeTimer;
+    [SerializeField] GameObject explosionPrefab;
 
     Rigidbody2D rb;
     AudioSource audioSource;
@@ -80,6 +81,7 @@ public class Bullet_Lydia : MonoBehaviour
 
     void Disable()
     {
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         gameObject.SetActive(false);
     }
 }
