@@ -2730,6 +2730,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4868532602424686747, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868532602424686747, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868532602424686747, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 955832020}
+    - target: {fileID: 4868532602424686747, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868532602424686747, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShakeScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868532602424686747, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CameraShake, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868532602424686747, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868532602424686747, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
+      propertyPath: onHit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5743219215703531890, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2760,6 +2792,7 @@ GameObject:
   - component: {fileID: 955832017}
   - component: {fileID: 955832016}
   - component: {fileID: 955832019}
+  - component: {fileID: 955832020}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2866,6 +2899,21 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &955832020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955832015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f806bbd13fcbd9641a296f6abb771c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0
+  shakeAmount: 0.05
+  decreaseFactor: 1
 --- !u!1001 &1557358268
 PrefabInstance:
   m_ObjectHideFlags: 0

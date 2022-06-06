@@ -7,6 +7,7 @@ public class AgentEnemy : MonoBehaviour
 {
     Transform target;
     [SerializeField] GameObject corpsePrefab;
+    [SerializeField] GameObject poofPrefab;
 
     
     void Start()
@@ -24,6 +25,7 @@ public class AgentEnemy : MonoBehaviour
         {
             GameEvents.instance.EnemyArrivedToDestination.Invoke();
             GetComponent<ApplyDamage_Lydia>().ApplyDamageToDamagable(target.gameObject.GetComponent<Damagable_Lydia>());
+            Instantiate(poofPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
 
         }
