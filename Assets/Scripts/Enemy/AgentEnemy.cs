@@ -1,15 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
-public class Move : MonoBehaviour
+public class AgentEnemy : MonoBehaviour
 {
     Transform target;
+
     
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Target").transform;
         GetComponent<NavMeshAgent2D>().destination = target.position;
+        GetComponent<Damagable_Lydia>().onHit.AddListener(()=>OnHit());
+        GetComponent<Damagable_Lydia>().onDeath.AddListener(()=>OnDeath());
+        
     }
 
     private void Update()
@@ -21,5 +26,14 @@ public class Move : MonoBehaviour
             Destroy(gameObject);
 
         }
+    }
+
+    void OnHit()
+    {
+        GetComponent<Animator>().SetTrigger("hit");
+    }
+    void OnDeath()
+    {
+        GetComponent<Animator>().SetBool("die",true);
     }
 }
