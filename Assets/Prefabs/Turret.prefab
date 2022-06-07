@@ -149,7 +149,7 @@ MonoBehaviour:
   pool: {fileID: 1298678823198118558}
   CoolDownRanged: 1
   firePointTransform: {fileID: 1298678823833053493}
-  mode: 2
+  mode: 1
 --- !u!114 &96579008144472545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   axis: 1
   inverted: 0
-  <aimToMouse>k__BackingField: 1
+  <aimToMouse>k__BackingField: 0
 --- !u!50 &1298678823453648262
 Rigidbody2D:
   serializedVersion: 4
