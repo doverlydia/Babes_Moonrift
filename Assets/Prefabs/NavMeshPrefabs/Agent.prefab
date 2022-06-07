@@ -213,6 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   corpsePrefab: {fileID: 7967540393224340208, guid: 55995641c1357d4478b64a1470188fef, type: 3}
   poofPrefab: {fileID: 4744543080139804242, guid: 9597eecdf8372d64d947d1ed81c76838, type: 3}
+  summonPortalPrefab: {fileID: 1731596798194111833, guid: 8539afda2ab44be47be69b17b7429500, type: 3}
 --- !u!114 &788560815178862276
 MonoBehaviour:
   m_ObjectHideFlags: 0

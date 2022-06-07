@@ -8,8 +8,13 @@ public class AgentEnemy : MonoBehaviour
     Transform target;
     [SerializeField] GameObject corpsePrefab;
     [SerializeField] GameObject poofPrefab;
+    [SerializeField] GameObject summonPortalPrefab;
 
-    
+    private void Awake()
+    {
+        Instantiate(summonPortalPrefab, transform.position, Quaternion.identity);
+    }
+
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Target").transform;

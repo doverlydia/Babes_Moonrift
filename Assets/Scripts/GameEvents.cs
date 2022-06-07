@@ -12,4 +12,9 @@ public class GameEvents : MonoBehaviour
     {
         instance = this;
     }
+
+    public void InvokeOnGameLost()
+    {
+        GameLost.Invoke();
+    }
 }
