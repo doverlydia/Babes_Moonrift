@@ -31,8 +31,16 @@ public class TurretSpawningManager : MonoBehaviour
 
     public void ActivateTurretSpawner()
     {
+<<<<<<< HEAD
         if (CanAffordTurret(0))
             turretSpawner.gameObject.SetActive(true);
+=======
+        if (CanAffordTurret(10))
+        {
+            turretSpawner.gameObject.SetActive(true);
+            playerStats.SubtractMoney(10);
+        }
+>>>>>>> Player
     }
 
     private void Update()

@@ -15,4 +15,11 @@ public class PlayerStats : MonoBehaviour
     {
         Money += amount;
     }
+<<<<<<< HEAD
+=======
+    public void SubtractMoney(int amount)
+    {
+        Money -= amount;
+    }
+>>>>>>> Player
 }

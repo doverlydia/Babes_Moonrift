@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 public class Damagable_Lydia : MonoBehaviour
 {
     [SerializeField] float maxHp;
     internal bool Dead => currentHp <= 0;
     private float currentHp;
+    public UnityEvent onHit;
+    public UnityEvent onDeath;
 
     private void Start()
     {
@@ -15,11 +19,13 @@ public class Damagable_Lydia : MonoBehaviour
     {
         //hit
         currentHp -= howMuch;
+        onHit.Invoke();
 
         //death
         if (currentHp <= 0)
         {
-            Destroy(gameObject);
+            onDeath.Invoke();
+            Destroy(gameObject,0.5f);
         }
     }
     public float GetCurrentHP()
