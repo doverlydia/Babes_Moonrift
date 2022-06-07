@@ -16,7 +16,7 @@ public class WaveSpawner : MonoBehaviour
     }
 
     public Wave[] waves;
-    private int nextWave = 0;
+    public int nextWave { get; private set; } = 0;
 
     [SerializeField] float timeBetweenWaves = 5f;
     public float waveCountdown;
