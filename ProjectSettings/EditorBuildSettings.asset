@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: ded3d6db83d3ce046bfac9a68cde351b
+    path: Assets/Scenes/Randy_MainMenu.unity
+    guid: 6f0bc0d92a068b745b2c9a6e634285a3
   - enabled: 1
-    path: Assets/Scenes/Game_Final.unity
-    guid: 7370a94f09cbf2645b7bb71147b77083
+    path: Assets/Scenes/Game_Final _WithJuice.unity
+    guid: a05de43d35962c74bb7fd6d9b845a458
   - enabled: 1
     path: Assets/Scenes/Randy_Credits.unity
     guid: baa77cc555d128b42b2bffb1f992c65e

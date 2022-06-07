@@ -9,13 +9,6 @@ public class HUDManager : MonoBehaviour
     public TextMeshProUGUI waveText;
     public TextMeshProUGUI moneyText;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {

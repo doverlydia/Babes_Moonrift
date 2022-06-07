@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 53dff6d2c6782af4b9427f205aefab18, type: 2}
+--- !u!114 &28938697 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8719046174700110790, guid: ea9a153a2318c3c46afff29a633be072, type: 3}
+  m_PrefabInstance: {fileID: 1557358268}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837d547bb36d4ec4cbff509fd1fb160b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &155862844
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +703,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 684226747}
   m_CullTransparentMesh: 1
+--- !u!114 &780394635 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8719046174700110788, guid: ea9a153a2318c3c46afff29a633be072, type: 3}
+  m_PrefabInstance: {fileID: 1557358268}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab595fb70446d5944af69d779acd44b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &798597569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2685,7 +2707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 255213977676535381, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.24
+      value: -0.98
       objectReference: {fileID: 0}
     - target: {fileID: 255213977676535381, guid: 3fd6e8e9f8f8c5343a7d3c79c9c87d99, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2864,7 +2886,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8719046174700110788, guid: ea9a153a2318c3c46afff29a633be072, type: 3}
       propertyPath: <Money>k__BackingField
-      value: 30
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 8719046174700110790, guid: ea9a153a2318c3c46afff29a633be072, type: 3}
       propertyPath: turretSpawner
@@ -3674,6 +3696,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7225128934146747662, guid: 5848b3c8ee948cf46a085ea4776ffd8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 28938697}
+    - target: {fileID: 7225128934178306930, guid: 5848b3c8ee948cf46a085ea4776ffd8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 28938697}
+    - target: {fileID: 7225128934480277936, guid: 5848b3c8ee948cf46a085ea4776ffd8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 28938697}
+    - target: {fileID: 7225128934575419338, guid: 5848b3c8ee948cf46a085ea4776ffd8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 28938697}
+    - target: {fileID: 7225128935132385252, guid: 5848b3c8ee948cf46a085ea4776ffd8c, type: 3}
+      propertyPath: ps
+      value: 
+      objectReference: {fileID: 780394635}
+    - target: {fileID: 7225128935132385252, guid: 5848b3c8ee948cf46a085ea4776ffd8c, type: 3}
+      propertyPath: waveSpawner
+      value: 
+      objectReference: {fileID: 174313883}
     - target: {fileID: 8270069912470922169, guid: 5848b3c8ee948cf46a085ea4776ffd8c, type: 3}
       propertyPath: m_Name
       value: Game UI

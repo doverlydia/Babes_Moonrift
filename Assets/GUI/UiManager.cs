@@ -6,8 +6,6 @@ public class UiManager : MonoBehaviour
 {
     public GameObject shop;
 
-
-
     IEnumerator waiter()
     {
         yield return new WaitForSeconds(1f);
