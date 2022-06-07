@@ -4005,7 +4005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1621824424746779771, guid: 18b490f2bcf6d004aa9e69ee3ca5cf66, type: 3}
       propertyPath: m_Name
-      value: Shop
+      value: UI
       objectReference: {fileID: 0}
     - target: {fileID: 1621824424876115625, guid: 18b490f2bcf6d004aa9e69ee3ca5cf66, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
