@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aca1295eaebde544990e9655862e877d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EDeath: {fileID: 0}
+  EDeath: {fileID: 2608905428969068962, guid: 28810ee547f8d1c4ea6f34aadee6918f, type: 3}
 --- !u!114 &7957343327674752712
 MonoBehaviour:
   m_ObjectHideFlags: 0

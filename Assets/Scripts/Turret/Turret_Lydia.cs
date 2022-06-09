@@ -16,6 +16,9 @@ public class Turret_Lydia : MonoBehaviour
     [SerializeField] private float CoolDownRanged;
     [SerializeField] Transform firePointTransform;
     [SerializeField] public ShootMode mode;
+    [SerializeField] public AudioClip BulletSound;
+    private AudioSource audioSource;
+
     public GameControll controll { get; private set; }
     public LookAt2D_Lydia lookAt { get; private set; }
     internal Vector2 shootVector => GetShootVector();
@@ -47,6 +50,7 @@ public class Turret_Lydia : MonoBehaviour
         //Cursor.lockState = CursorLockMode.Confined;
         lookAt = GetComponent<LookAt2D_Lydia>();
         controll = FindObjectOfType<GameControll>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -75,6 +79,7 @@ public class Turret_Lydia : MonoBehaviour
             Bullet_Lydia shot = bullet.GetComponent<Bullet_Lydia>();
             bullet.SetActive(true);
             shot.direction = shootVector;
+            audioSource.PlayOneShot(BulletSound);
         }
     }
 
